@@ -1,0 +1,389 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  transition: 0.4s ease;
+}
+
+/* =========================
+   DARK / LIGHT MODE
+========================= */
+
+.dark {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: white;
+  min-height: 100vh;
+}
+
+.light {
+  background: #f1f5f9;
+  color: black;
+  min-height: 100vh;
+}
+
+.light .sidebar,
+.light .box,
+.light .stat-card,
+.light .welcome-box,
+.light .chart-box,
+.light .topbar {
+  background: white;
+  color: black;
+}
+
+.light .sidebar a {
+  color: black;
+}
+
+.light input {
+  background: white;
+  color: black;
+}
+
+.light button {
+  color: black;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  width: 250px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  padding: 14px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  background: #8b5cf6;
+  transform: translateX(5px);
+}
+
+.active-link {
+  background: #8b5cf6;
+  color: white !important;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  background: rgba(255,255,255,0.08);
+  padding: 15px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.topbar input {
+  width: 320px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.top-actions button {
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.top-actions button:hover {
+  transform: scale(1.1);
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+/* =========================
+   WELCOME BOX
+========================= */
+
+.welcome-box {
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.welcome-box h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   STAT CARDS
+========================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+}
+
+.stat-card h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.stat-card h1 {
+  color: #38bdf8;
+  font-size: 38px;
+}
+
+/* =========================
+   CHART BOX
+========================= */
+
+.chart-box {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   GENERAL BOX
+========================= */
+
+.box {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 25px;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.box h2 {
+  margin-bottom: 20px;
+}
+
+/* =========================
+   BOTTOM GRID
+========================= */
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress {
+  width: 100%;
+  height: 10px;
+  background: #334155;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #8b5cf6;
+  border-radius: 20px;
+}
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-card img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   CIRCLE ATTENDANCE
+========================= */
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid #8b5cf6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* =========================
+   LOADER
+========================= */
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid white;
+  border-top: 5px solid #8b5cf6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b5cf6;
+  border-radius: 20px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .topbar input {
+    width: 100%;
+  }
+
+  .welcome-box h1 {
+    font-size: 28px;
+  }
+
+  .stat-card h1 {
+    font-size: 30px;
+  }
+}
