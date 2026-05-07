@@ -1,7 +1,3 @@
-/* =========================
-   GLOBAL STYLES
-========================= */
-
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +9,7 @@ body {
   transition: 0.4s ease;
 }
 
-/* =========================
-   DARK / LIGHT MODE
-========================= */
+
 
 .dark {
   background: linear-gradient(to right, #0f172a, #1e293b);
@@ -52,18 +46,14 @@ body {
   color: black;
 }
 
-/* =========================
-   LAYOUT
-========================= */
+
 
 .layout {
   display: flex;
   min-height: 100vh;
 }
 
-/* =========================
-   SIDEBAR
-========================= */
+
 
 .sidebar {
   width: 250px;
@@ -99,18 +89,14 @@ body {
   color: white !important;
 }
 
-/* =========================
-   MAIN CONTENT
-========================= */
+
 
 .main {
   flex: 1;
   padding: 20px;
 }
 
-/* =========================
-   TOPBAR
-========================= */
+
 
 .topbar {
   display: flex;
@@ -156,10 +142,6 @@ body {
   height: 45px;
 }
 
-/* =========================
-   WELCOME BOX
-========================= */
-
 .welcome-box {
   background: rgba(255,255,255,0.08);
   padding: 30px;
@@ -173,9 +155,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* =========================
-   STAT CARDS
-========================= */
+
 
 .stats-grid {
   display: grid;
@@ -207,9 +187,7 @@ body {
   font-size: 38px;
 }
 
-/* =========================
-   CHART BOX
-========================= */
+
 
 .chart-box {
   background: rgba(255,255,255,0.08);
@@ -218,9 +196,7 @@ body {
   margin-bottom: 25px;
 }
 
-/* =========================
-   GENERAL BOX
-========================= */
+
 
 .box {
   background: rgba(255,255,255,0.08);
@@ -238,9 +214,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* =========================
-   BOTTOM GRID
-========================= */
 
 .bottom-grid {
   display: grid;
@@ -248,9 +221,7 @@ body {
   gap: 20px;
 }
 
-/* =========================
-   LISTS
-========================= */
+
 
 ul {
   margin-top: 15px;
@@ -262,9 +233,7 @@ li {
   font-size: 18px;
 }
 
-/* =========================
-   PROGRESS BAR
-========================= */
+
 
 .progress {
   width: 100%;
@@ -280,9 +249,7 @@ li {
   border-radius: 20px;
 }
 
-/* =========================
-   PROFILE CARD
-========================= */
+
 
 .profile-card {
   text-align: center;
@@ -294,9 +261,7 @@ li {
   margin-bottom: 15px;
 }
 
-/* =========================
-   CIRCLE ATTENDANCE
-========================= */
+
 
 .circle {
   width: 120px;
@@ -310,9 +275,7 @@ li {
   margin-top: 20px;
 }
 
-/* =========================
-   LOADER
-========================= */
+
 
 .loader {
   width: 50px;
@@ -329,9 +292,7 @@ li {
   }
 }
 
-/* =========================
-   FOOTER
-========================= */
+
 
 footer {
   text-align: center;
@@ -340,9 +301,7 @@ footer {
   opacity: 0.7;
 }
 
-/* =========================
-   SCROLLBAR
-========================= */
+
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -353,9 +312,7 @@ footer {
   border-radius: 20px;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
+
 
 @media (max-width: 768px) {
 
